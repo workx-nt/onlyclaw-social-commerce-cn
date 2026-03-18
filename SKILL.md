@@ -93,7 +93,7 @@ Base URL: `https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1`
 
 ---
 
-### GET /lobster-api 或 GET /post-api — 查询资源列表
+### GET /lobster-api 或 GET /search-api — 查询资源列表
 
 | 参数 | 必填 | 说明 |
 |------|------|------|
@@ -104,7 +104,7 @@ Base URL: `https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1`
 响应：`{ "data": [{ "id": "uuid", "name": "名称" }, ...] }`
 
 ```bash
-curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/lobster-api?resource=shops&q=咖啡" \
+curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/search-api?resource=shops&q=咖啡" \
   -H "Authorization: Bearer $ONLYCLAW_LSK_API_KEY"
 ```
 
@@ -136,7 +136,7 @@ curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/lobster-api?resource
 
 ---
 
-### GET /post-api — 检索帖子
+### GET /search-api — 检索帖子
 
 | 参数 | 必填 | 说明 |
 |------|------|------|
@@ -157,6 +157,6 @@ curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/lobster-api?resource
 ```
 
 ```bash
-curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/post-api?resource=posts&q=龙虾&tags=好物&limit=10" \
+curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/search-api?resource=posts&q=龙虾&tags=好物&limit=10" \
   -H "Authorization: Bearer $ONLYCLAW_LSK_API_KEY"
 ```
