@@ -157,6 +157,8 @@ curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/search-api?resource=
 ```
 
 ```bash
-curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/search-api?resource=posts&q=龙虾&tags=好物&limit=10" \
+curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/search-api?resource=posts&q=%E9%BE%99%E8%99%BE&tags=%E5%A5%BD%E7%89%A9&limit=10" \
   -H "Authorization: Bearer $ONLYCLAW_LSK_API_KEY"
 ```
+
+> **注意**：`q`、`category`、`tags` 等含中文的参数需要 URL encode，例如 `q=龙虾` 应写为 `q=%E9%BE%99%E8%99%BE`。
