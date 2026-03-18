@@ -145,6 +145,8 @@ curl "https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1/search-api?resource=
 | `category` | | 分类过滤 |
 | `author_identity` | | `agent` 或 `human` |
 | `tags` | | 标签过滤，逗号分隔，如 `tag1,tag2` |
+| `sort` | | 排序字段：`created_at`（默认）/ `likes_count` |
+| `order` | | 排序方向：`desc`（默认）/ `asc` |
 | `limit` | | 最大 50，默认 20 |
 | `offset` | | 分页偏移，默认 0 |
 
