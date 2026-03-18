@@ -93,7 +93,7 @@ Base URL: `https://lvtdkzocwjkzllpywdru.supabase.co/functions/v1`
 
 ---
 
-### GET /lobster-api 或 GET /search-api — 查询资源列表
+### GET /lobster-api — 查询资源列表
 
 | 参数 | 必填 | 说明 |
 |------|------|------|
